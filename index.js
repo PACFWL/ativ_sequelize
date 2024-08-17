@@ -12,8 +12,8 @@ app.get('/cadastro/:nome/:sobrenome/:idade', async (req, res) => {
         const newClient = await Cliente.create({
             nome: `${nome} ${sobrenome}`,
             idade,
-            endereco: "Default Address",
-            bairro: "Default Neighborhood",
+            endereco: "Endereço Padrão",
+            bairro: "Bairro Padrão",
             cep: "00000-000",
             telefone: "0000-0000",
             celular: "99999-9999"
