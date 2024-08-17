@@ -5,12 +5,12 @@ const { Cliente } = require('./database/banco');
 app.use(express.json());
  
 
-app.get('/cadastro/:nome/:surname/:idade', async (req, res) => {
-    const { nome, surname, idade } = req.params;
+app.get('/cadastro/:nome/:sobrenome/:idade', async (req, res) => {
+    const { nome, sobrenome, idade } = req.params;
     try {
        
         const newClient = await Cliente.create({
-            nome: `${nome} ${surname}`,
+            nome: `${nome} ${sobrenome}`,
             idade,
             endereco: "Default Address",
             bairro: "Default Neighborhood",
