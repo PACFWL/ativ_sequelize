@@ -69,7 +69,7 @@ sequelize.sync({ force: true }).then(async () => {
             celular: '77777-7777'
         }
     ]);
-    console.log("Initial clients added to the database.");
+    console.log("Clientes iniciais adicionados ao banco de dados.");
 });
  
 module.exports = {
